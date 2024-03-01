@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>AI universe</title>
+</head>
+
+<body>
+    <header class="container mx-auto text-center space-y-5">
+        <h1 class="font-semibold text-5xl">AI Universe Hub</h1>
+        <button class="btn btn-error text-white">Sort By Date</button>
+    </header>
+    <main class="container mx-auto mt-28">
+        <div id="cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10">
+
+        </div>
+        <div class="text-center my-4">
+            <button id="show-all" onclick="showAll()" class="btn btn-error text-white ">Sort By Date</button>
+        </div>
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="singleDataModal" class="modal">
+            <div class="modal-box">
+                <h3 id="description" class="font-bold text-lg">Hello!</h3>
+                <p class="py-4">Press ESC key or click outside to close</p>
+            </div>
+            <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+            </form>
+        </dialog>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
